@@ -3,18 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script>
-        src = "JsBarcode.all.min.js"
-    </script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>BarCode Generator</title>
     <script src="js/JsBarcode.all.min.js"></script>
+
+    <style>
+        footer{
+            width:100%;
+            padding:8px;
+            background-color: #F8F9FA;
+            color:#000000E6;
+            text-align: center;
+            position:fixed;
+            bottom: 0;
+            right:0;
+            
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
     
-    <input type="text" name="text_input" id="text_input">
-    <button id="btn_generate">Generate Button</button>
+    <!-- As a heading -->
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="https://images.vexels.com/media/users/3/157862/isolated/preview/5fc76d9e8d748db3089a489cdd492d4b-barcode-scanning-icon-by-vexels.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        BarCode 
+        </a>
+    </nav>
     <br><br>
-    <svg id="barcode"></svg>
+    <div class="container">
+
+    
+            <input type="text" name="text_input" id="text_input" class="form-control" placeholder="Barcode">
+            <br>
+            <button id="btn_generate" class="btn btn-primary">Generate Button</button>
+        
+    </div>
+    
+    
+    
+    
+    
+    </div>
+
+<center>
+    <svg id="barcode" style="display: block;
+    margin: auto;text-align: center;"></svg>
+</center>
+
+<!-- Footer -->
+<footer>
+<p>© Copyright 2012-2020</p>
+</footer>
 
 </body>
 <script type="text/javascript">
